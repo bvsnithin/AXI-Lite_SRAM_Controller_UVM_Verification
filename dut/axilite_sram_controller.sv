@@ -1,5 +1,5 @@
 module sram_lite_controller (
-    input logic clock;
+    input logic clk;
     input logic rst_n;
     
     // Write Address Channel - Address & Control (AW)
@@ -14,7 +14,7 @@ module sram_lite_controller (
     output logic        s_axi_wready;
 
     // Write Response Channel - Write Response (B)
-    input logic        s_axi_bready;
+    input  logic       s_axi_bready;
     output logic       s_axi_bvalid;
     output logic [1:0] s_axi_bresp;
 
@@ -39,6 +39,10 @@ module sram_lite_controller (
     output logic        rd_en;
 
 );
+
+
+
+    
 
     
 
