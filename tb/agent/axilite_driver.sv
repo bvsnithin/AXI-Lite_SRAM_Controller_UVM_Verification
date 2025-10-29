@@ -12,13 +12,13 @@ class axilite_driver extends uvm_driver;
     endfunction: new
 
     function void build_phase (uvm_phase phase);
-        super.new(phase);
+        super.build_phase(phase);
         `uvm_info("DRIVER", "Build phase", UVM_LOW);
     endfunction: build_phase
 
     function void connect_phase( uvm_phase phase );
         super.connect_phase(phase);
-        `uvm_info("DRIVER", "Connect phase", UVM_LOW)
+        `uvm_info("DRIVER", "Connect phase", UVM_LOW);
     endfunction: connect_phase
 
 endclass: axilite_driver
