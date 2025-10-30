@@ -12,13 +12,13 @@ class axilite_agent extends uvm_agent;
     endfunction: new
 
     function void build_phase (uvm_phase phase);
-        super.new(phase);
+        super.build_phase(phase);
         `uvm_info("AGENT", "Build phase", UVM_LOW);
     endfunction: build_phase
 
     function void connect_phase( uvm_phase phase );
         super.connect_phase(phase);
-        `uvm_info("AGENT", "Connect phase", UVM_LOW)
+        `uvm_info("AGENT", "Connect phase", UVM_LOW);
     endfunction: connect_phase
 
 

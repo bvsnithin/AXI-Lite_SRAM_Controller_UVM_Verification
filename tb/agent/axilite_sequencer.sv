@@ -12,13 +12,13 @@ class axilite_sequencer extends uvm_sequencer;
     endfunction: new
 
     function void build_phase (uvm_phase phase);
-        super.new(phase);
+        super.build_phase(phase);
         `uvm_info("SEQUENCER", "Build phase", UVM_LOW);
     endfunction: build_phase
 
     function void connect_phase( uvm_phase phase );
         super.connect_phase(phase);
-        `uvm_info("SEQUENCER", "Connect phase", UVM_LOW)
+        `uvm_info("SEQUENCER", "Connect phase", UVM_LOW);
     endfunction: connect_phase
 
 
